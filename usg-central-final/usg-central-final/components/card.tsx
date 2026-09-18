@@ -1,0 +1,1 @@
+export function Card({title,children,action}:{title?:string;children:React.ReactNode;action?:React.ReactNode}){return <section className="card">{title&&<div className="cardhead"><div className="cardtitle">{title}</div>{action}</div>}{children}</section>}
