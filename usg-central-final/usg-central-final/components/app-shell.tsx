@@ -1,2 +1,0 @@
-import {Sidebar} from "./sidebar";
-export function AppShell({children}:{children:React.ReactNode}){return <div className="shell"><Sidebar/><main className="main"><header className="topbar"><div><b>University Student Government</b><div className="muted">AY 2026–2027</div></div><div style={{display:"flex",alignItems:"center",gap:10}}><span className="badge green">System Online</span><b style={{fontSize:13}}>USG Officer</b></div></header>{children}</main></div>}
