@@ -1,0 +1,4 @@
+@import "tailwindcss";
+:root{--navy:#0b1f3a;--gold:#c8a951;--ink:#172033;--bg:#f5f7fb}
+*{box-sizing:border-box}html,body{min-height:100%}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Century Gothic","Aptos",Arial,sans-serif}
+button,input,textarea,select{font:inherit}a{text-decoration:none;color:inherit}

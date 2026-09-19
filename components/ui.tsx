@@ -1,0 +1,4 @@
+import type { ReactNode } from "react";
+export function Card({children,className=""}:{children:ReactNode;className?:string}){return <div className={`rounded-2xl border border-slate-200 bg-white shadow-sm ${className}`}>{children}</div>}
+export function Button({children,className="",...props}:React.ButtonHTMLAttributes<HTMLButtonElement>){return <button className={`rounded-xl bg-[#0b1f3a] px-4 py-2.5 text-sm font-semibold text-white hover:opacity-90 ${className}`} {...props}>{children}</button>}
+export function Input(props:React.InputHTMLAttributes<HTMLInputElement>){return <input {...props} className={`w-full rounded-xl border border-slate-300 bg-white px-3 py-2.5 text-sm outline-none focus:border-[#0b1f3a] ${props.className||""}`}/> }

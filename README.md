@@ -1,31 +1,16 @@
-# USG Central 2.0
+# USG Central v3.0
 
-A full-stack-ready University Student Government Operations and Student Services Portal.
-
-## Modules
-Public Portal · Officer Dashboard · Tasks · Activities · Meetings · Documents · Student Concerns · Announcements · Finance · Inventory & Borrowing · Governance Registry · Departments · Strategic Scorecard · Users & Roles · Settings.
-
-## Stack
-Next.js 15 · TypeScript · Tailwind CSS · Lucide · Supabase Auth/PostgreSQL/Storage · Vercel-ready.
+Next.js 15 + React 19 + Tailwind CSS 4 + Supabase foundation for CSU Cabadbaran Campus USG operations.
 
 ## Setup
-1. Install Node.js 20+.
-2. `npm install`
-3. Copy `.env.example` to `.env.local`.
-4. Add Supabase URL and anon key.
-5. Run `supabase/schema.sql` in Supabase SQL Editor.
-6. `npm run dev`
-7. Open `http://localhost:3000`.
+1. Create a Supabase project.
+2. Run `supabase/schema.sql` in Supabase SQL Editor.
+3. Copy `.env.example` to `.env.local` and add Supabase credentials.
+4. Run `npm install`, then `npm run dev`.
+5. For Vercel, add the same environment variables.
 
-## Production checklist
-- Create officer accounts in Supabase Auth.
-- Change the assigned profile roles from `student` to the authorized USG roles.
-- Review every RLS policy against the university's approved governance and privacy rules.
-- Configure email/password or approved institutional SSO.
-- Configure file retention and backups.
-- Add real CRUD forms and server actions for each module.
-- Add PDF generation, notifications, audit logging hooks, and reporting exports.
-- Never place private student concerns, financial records, or credentials in public storage.
+## Included
+Public portal, officer login, dashboard, tasks, activities, meetings, documents, student concerns, announcements, finance, inventory/property, governance, departments, strategic scorecard, users/roles, settings, RLS, and private file storage.
 
-## Governance model represented
-The system supports the USG structure with an Executive Secretary, Treasurer, Auditor, seven Cabinet Secretary role slots, departmental workspaces, and the planned ten executive departments. Multiple departments can be supervised by one Cabinet Secretary.
+## Scope note
+This ZIP is the corrected v3.0 foundation with the Tailwind/PostCSS build issue fixed. The module screens are structured placeholders; live CRUD forms, approvals, exports, notifications, and complete workflow automation are not yet implemented.

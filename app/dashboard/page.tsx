@@ -1,0 +1,3 @@
+import {Card} from "../../components/ui";
+const s=[["Open Tasks","0"],["Activities","0"],["Pending Concerns","0"],["Finance Records","0"],["Inventory Items","0"],["Scorecard Indicators","0"]];
+export default function Dashboard(){return <div><header className="border-b bg-white px-6 py-5"><div className="text-sm text-slate-500">USG Central</div><h1 className="text-2xl font-bold text-[#0b1f3a]">Operations Dashboard</h1></header><section className="p-6"><div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">{s.map(([a,b])=><Card key={a} className="p-5"><div className="text-sm text-slate-500">{a}</div><div className="mt-2 text-3xl font-bold text-[#0b1f3a]">{b}</div></Card>)}</div></section></div>}
